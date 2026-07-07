@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Expense Tracker | Dileep Mandaloju</title>
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 2 12 8 18"/><polyline points="16 6 22 12 16 18"/></symbol>
+<symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14a8 3 0 0 0 16 0V5"/><path d="M4 12a8 3 0 0 0 16 0"/></symbol>
+<symbol id="i-pipeline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="2.2"/><circle cx="5" cy="18" r="2.2"/><circle cx="18" cy="12" r="2.2"/><path d="M5 8.2V15.8"/><path d="M7 7 16 11"/><path d="M7 17 16 13"/></symbol>
+<symbol id="i-browser" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8h20"/><circle cx="5.5" cy="6" r="0.6" fill="currentColor" stroke="none"/><circle cx="8" cy="6" r="0.6" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></symbol>
+<symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L2 19l3 3 7.3-7.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2z"/></symbol>
+<symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="6 9 10 12 6 15"/><line x1="12" y1="15" x2="17" y2="15"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="2" y1="13" x2="22" y2="13"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-8-7-8-12.5A4.5 4.5 0 0 1 12 5.5 4.5 4.5 0 0 1 20 8.5C20 14 12 21 12 21z"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5-10-5z"/><path d="M6 11.5V17c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></symbol>
+<symbol id="i-warehouse" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 4l9 6"/><path d="M5 10v10h14V10"/><line x1="9" y1="20" x2="9" y2="14"/><line x1="15" y1="20" x2="15" y2="14"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/><circle cx="17" cy="15" r="1.2" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.6"/><path d="M15.5 13a5.5 5.5 0 0 1 6.5 5.4"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></symbol>
+<symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5.2"/><path d="M8.5 12.8 7 21l5-2.5L17 21l-1.5-8.2"/></symbol>
+</svg>
+
+<header>
+  <div class="breadcrumb"><a href="index.html#projects">Projects</a> / Personal Expense Tracker</div>
+  <div class="title-row tag-software">
+    <div class="icon-badge"><svg class="icon"><use href="#i-wallet"/></svg></div>
+    <h1>Personal Expense Tracker</h1>
+  </div>
+  <div class="meta-row">Academic project &middot; Python &middot; Flask &middot; SQLAlchemy &middot; Plotly</div>
+  <span class="category-badge tag-software">Software Development</span>
+</header>
+
+<section class="content">
+
+  <div class="card">
+    <h2><svg class="icon"><use href="#i-terminal"/></svg>Overview</h2>
+    <p>
+      A Flask web app for tracking personal spending, with both a standard web UI and a
+      REST API, plus an analytics view that breaks spending down by category and by day
+      over a chosen date range.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><svg class="icon"><use href="#i-code"/></svg>Key Contributions</h2>
+    <ul>
+      <li>Built full CRUD for expenses (amount, category, note, date) with Flask-Login-gated access per user.</li>
+      <li>Exposed the same functionality as a REST API (<code>GET</code>/<code>POST</code>/<code>PUT</code>/<code>DELETE</code> on <code>/api/expenses</code>) alongside the web UI.</li>
+      <li>Built an analytics route with date-range filtering, aggregating totals with SQLAlchemy's <code>func.sum</code> grouped by category and by date.</li>
+      <li>Rendered the results as interactive Plotly charts &mdash; a category breakdown pie chart and a daily spending bar chart &mdash; plus KPI cards for total spend, top category, and daily average.</li>
+      <li>Hashed passwords with Werkzeug and used Flask-Login for session management.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><svg class="icon"><use href="#i-wrench"/></svg>Tech Stack</h2>
+    <div class="tech-row"><span>Python</span><span>Flask</span><span>SQLAlchemy</span><span>Flask-Login</span><span>Plotly.js</span><span>Bootstrap 5</span></div>
+  </div>
+
+  <div class="card">
+    <h2><svg class="icon"><use href="#i-chart"/></svg>Analytics View</h2>
+    <div class="diagram-box">
+      <svg viewBox="0 0 760 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Expense tracker analytics wireframe">
+        <style>
+          .box{fill:#182130;stroke:#223140;stroke-width:1;}
+          .kpi{fill:#0f2b29;stroke:#223140;stroke-width:1;}
+          .lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;fill:#e7edf3;}
+          .sub{font-family:'IBM Plex Mono',monospace;font-size:14px;fill:#57c7c1;font-weight:600;}
+          .slice1{fill:#57c7c1;}
+          .slice2{fill:#e8b84b;}
+          .slice3{fill:#3a5a68;}
+          .bar{fill:#57c7c1;opacity:0.7;}
+        </style>
+
+        <rect class="kpi" x="10" y="10" width="230" height="64" rx="6"/>
+        <text class="lbl" x="22" y="32">Total Spend</text>
+        <text class="sub" x="22" y="58">&#8377;18,420</text>
+
+        <rect class="kpi" x="255" y="10" width="230" height="64" rx="6"/>
+        <text class="lbl" x="267" y="32">Top Category</text>
+        <text class="sub" x="267" y="58">Food</text>
+
+        <rect class="kpi" x="500" y="10" width="250" height="64" rx="6"/>
+        <text class="lbl" x="512" y="32">Daily Average</text>
+        <text class="sub" x="512" y="58">&#8377;612</text>
+
+        <rect class="box" x="10" y="90" width="330" height="140" rx="6"/>
+        <text class="lbl" x="22" y="110">Category breakdown</text>
+        <g transform="translate(120,175)">
+          <path class="slice1" d="M0 0 L0 -55 A55 55 0 0 1 47 27 Z"/>
+          <path class="slice2" d="M0 0 L47 27 A55 55 0 0 1 -40 37 Z"/>
+          <path class="slice3" d="M0 0 L-40 37 A55 55 0 0 1 0 -55 Z"/>
+        </g>
+
+        <rect class="box" x="356" y="90" width="394" height="140" rx="6"/>
+        <text class="lbl" x="368" y="110">Daily spending</text>
+        <rect class="bar" x="376" y="180" width="20" height="35"/>
+        <rect class="bar" x="404" y="160" width="20" height="55"/>
+        <rect class="bar" x="432" y="195" width="20" height="20"/>
+        <rect class="bar" x="460" y="150" width="20" height="65"/>
+        <rect class="bar" x="488" y="170" width="20" height="45"/>
+        <rect class="bar" x="516" y="140" width="20" height="75"/>
+        <rect class="bar" x="544" y="165" width="20" height="50"/>
+        <rect class="bar" x="572" y="155" width="20" height="60"/>
+        <rect class="bar" x="600" y="185" width="20" height="30"/>
+      </svg>
+    </div>
+    <p class="diagram-note">Wireframe concept &mdash; illustrates the analytics layout, not a product screenshot.</p>
+  </div>
+
+  <div class="project-nav">
+    <a href="ecommerce-platform.html" class="nav-btn back">&larr; Previous Project</a>
+    <a href="index.html#projects" class="nav-btn next">Back to Projects &rarr;</a>
+  </div>
+
+</section>
+
+<script src="js/project.js"></script>
+</body>
+</html>
