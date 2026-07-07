@@ -52,8 +52,8 @@
   <div class="card">
     <h2><svg class="icon"><use href="#i-code"/></svg>Key Contributions</h2>
     <ul>
-      <li>Built the full recruiter workflow &mdash; registration, login, job posting, and a dashboard listing applicant counts per job.</li>
-      <li>Integrated Google's Gemini 2.5 Flash model to read extracted resume text against a job description and return a structured "fit score" (0&ndash;100) with a two-sentence summary.</li>
+      <li>Built the full recruiter workflow - registration, login, job posting, and a dashboard listing applicant counts per job.</li>
+      <li>Integrated Google's Gemini 2.5 Flash model to read extracted resume text against a job description and return a structured "fit score" (0-100) with a two-sentence summary.</li>
       <li>Used PyPDF2 to extract text from uploaded PDF resumes, with Werkzeug's <code>secure_filename</code> to keep uploads safe.</li>
       <li>Enforced strict JSON-only responses from the AI with response sanitization, so a single malformed reply can't break the recruiter dashboard.</li>
       <li>Designed the SQLite schema (users, jobs, applications) with the AI summary and score stored per application, ranked automatically for recruiters.</li>
