@@ -1,33 +1,31 @@
 portfolio/
 │
 ├── index.html
-├── heart-disease.html
-├── student-performance.html
+├── ai-job-portal.html
+├── retail-bi-pipeline.html
+├── student-performance-dashboard.html
+├── heart-disease-prediction.html
+├── college-placement-portal.html
+├── ecommerce-platform.html
+├── expense-tracker.html
 │
 ├── css/
 │   ├── style.css
-│   ├── heart-disease.css
-│   └── student-performance.css
+│   └── project.css
 │
-├── assets/
-│   ├─── heart/
-│   │ 	    ├── 1.png
-│   │		├── 2.png
-│   │		└── 3.png    
-│   ├─── student/
-│   │		├── 1.png
-│   │		├── 2.png
-│   │		└── 3.png
-│   │	
-│   └─── dileep-resume.pdf
-│	
 ├── js/
 │   ├── main.js
-│   ├── heart-disease.js
-│   └── student-performance.js
+│   └── project.js
 │
-├── structure
+├── assets/
+│   ├── dileep_resume.pdf
+│   └── certificates/
+│       ├── google-data-analytics.pdf
+│       ├── deloitte-data-analytics.pdf
+│       ├── nptel-python.pdf
+│       ├── apex-planet-fullstack.pdf
+│       └── officemaster-powerbi.pdf
 │
-├── LICENSE
-│
-└── README
+├── structure.txt
+├── LICENSE.txt
+└── README.md
